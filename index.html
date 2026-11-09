@@ -8,9 +8,8 @@
   
   <!-- ============================================================== -->
   <!-- 💰 MONETAG VERIFICATION TAG                                    -->
-  <!-- Monetag dashboard se jo meta tag milega usko yahan paste karein-->
   <!-- ============================================================== -->
-  <meta name="monetag" content="YOUR_MONETAG_VERIFICATION_CODE_HERE">
+  <meta name="monetag" content="586c90621033a0ffdb26c83e093297a4">
 
   <!-- ============================================================== -->
   <!-- 💰 MONETAG MULTITAG SCRIPT TAG (Main Ad Script)                -->
@@ -271,5 +270,16 @@
 
   <!-- Main JavaScript Logic -->
   <script src="js/main.js"></script>
+
+  <!-- Monetag Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+          .then(reg => console.log('Monetag Service Worker registered successfully', reg))
+          .catch(err => console.log('Service Worker registration failed: ', err));
+      });
+    }
+  </script>
 </body>
 </html>
