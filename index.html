@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechPulse — Modern Tech & AI Articles</title>
+  <meta name="description" content="Discover high-impact articles on Artificial Intelligence, Cloud Infrastructure, Cyber Security, and Software Engineering.">
+  
+  <!-- ============================================================== -->
+  <!-- 💰 MONETAG VERIFICATION TAG                                    -->
+  <!-- Monetag dashboard se jo meta tag milega usko yahan paste karein-->
+  <!-- ============================================================== -->
+  <meta name="monetag" content="YOUR_MONETAG_VERIFICATION_CODE_HERE">
+
+  <!-- ============================================================== -->
+  <!-- 💰 MONETAG MULTITAG SCRIPT TAG (Main Ad Script)                -->
+  <!-- Monetag "MultiTag" script ko yahan <head> ke andar paste karein -->
+  <!-- Example:                                                      -->
+  <!-- <script src="https://alwingulla.com/YOUR_ZONE_ID.js" data-cfasync="false" async></script> -->
+  <!-- ============================================================== -->
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo-area">
+        <div class="logo-badge">⚡</div>
+        <span>TechPulse</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#articles-section">Articles</a></li>
+        <li><a href="#trending-section">Trending</a></li>
+        <li><a href="#about-section">About</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Search Bar -->
+        <div class="search-box">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+          <input type="text" id="search-input" placeholder="Search articles...">
+        </div>
+
+        <!-- Monetag Setup Guide Button -->
+        <button class="ad-config-btn" id="ad-config-btn" title="Monetag Ads Setup Guide">
+          ⚙️
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="theme-btn" id="theme-toggle" title="Toggle Light/Dark Theme">
+          ☀️
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="container" style="padding-top: 1.5rem;">
+
+    <!-- ============================================================== -->
+    <!-- 💰 MONETAG AD ZONE 1: TOP HEADER BANNER (728x90 or Responsive) -->
+    <!-- ============================================================== -->
+    <div class="monetag-slot" id="monetag-top-banner">
+      <div class="monetag-label">
+        <span>📢 Advertisement / Monetag Top Banner</span>
+      </div>
+      <div class="monetag-placeholder-content">
+        <p><strong>[Monetag Header Banner Zone]</strong></p>
+        <span class="monetag-tag-code">&lt;!-- Monetag 728x90 or Native Banner Script Goes Here --&gt;</span>
+      </div>
+    </div>
+
+    <!-- Category Filter Pills -->
+    <div class="category-filter" id="category-filter">
+      <button class="cat-btn active" data-category="All">All Topics</button>
+      <button class="cat-btn" data-category="AI & Tech">AI & Tech</button>
+      <button class="cat-btn" data-category="Cloud & DevOps">Cloud & DevOps</button>
+      <button class="cat-btn" data-category="Cyber Security">Cyber Security</button>
+      <button class="cat-btn" data-category="Development">Development</button>
+      <button class="cat-btn" data-category="Monetization">Monetization</button>
+    </div>
+
+    <!-- Featured Hero Article -->
+    <section class="hero-article" onclick="openArticle(1)">
+      <div class="hero-media">
+        <div class="hero-media-icon">🤖</div>
+      </div>
+      <div class="hero-body">
+        <span class="article-badge">Featured Story</span>
+        <h1 class="hero-title">The Future of Generative AI: From LLMs to Autonomous Agents</h1>
+        <p class="hero-excerpt">
+          Explore how autonomous multi-agent systems are reshaping software engineering, automated workflows, and digital intelligence across the global technology ecosystem.
+        </p>
+        <div class="article-meta">
+          <div class="meta-author">
+            <span class="author-avatar">A</span>
+            <span>Abdullah Dev</span>
+          </div>
+          <span>•</span>
+          <span>Nov 9, 2026</span>
+          <span>•</span>
+          <span>5 min read</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Layout (Articles + Sidebar) -->
+    <div class="content-layout" id="articles-section">
+      
+      <!-- Left Column: Articles Grid -->
+      <section>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
+          <h2 style="font-size: 1.5rem; font-weight: 800;">Latest Articles</h2>
+          <span style="color: var(--text-muted); font-size: 0.9rem;">Click any card to read</span>
+        </div>
+
+        <div class="articles-grid" id="articles-grid">
+          <!-- Dynamic articles will be rendered by main.js -->
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- 💰 MONETAG AD ZONE 2: IN-FEED NATIVE BANNER                     -->
+        <!-- ============================================================== -->
+        <div class="monetag-slot" id="monetag-in-feed-banner" style="margin-top: 2rem;">
+          <div class="monetag-label">
+            <span>📢 Sponsored / Monetag Native Feed Banner</span>
+          </div>
+          <div class="monetag-placeholder-content">
+            <p><strong>[Monetag Native Feed Ad Zone]</strong></p>
+            <span class="monetag-tag-code">&lt;!-- Monetag Native In-Feed Ad Code --&gt;</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Column: Sidebar -->
+      <aside class="sidebar" id="trending-section">
+        
+        <!-- ============================================================== -->
+        <!-- 💰 MONETAG AD ZONE 3: SIDEBAR BANNER (300x250 Medium Rectangle) -->
+        <!-- ============================================================== -->
+        <div class="monetag-slot" id="monetag-sidebar-slot" style="min-height: 250px;">
+          <div class="monetag-label">
+            <span>📢 Advertisement (300x250)</span>
+          </div>
+          <div class="monetag-placeholder-content">
+            <p><strong>[Monetag Sidebar Ad Zone]</strong></p>
+            <span class="monetag-tag-code">&lt;!-- 300x250 Banner or In-Page Push --&gt;</span>
+          </div>
+        </div>
+
+        <!-- Trending Widget -->
+        <div class="sidebar-widget">
+          <div class="widget-title">
+            <span>🔥 Trending Stories</span>
+            <span style="font-size: 0.8rem; color: var(--accent);">Live</span>
+          </div>
+          <div class="trending-list" id="trending-list">
+            <!-- Rendered by main.js -->
+          </div>
+        </div>
+
+        <!-- Newsletter Subscription Widget -->
+        <div class="sidebar-widget" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(16, 185, 129, 0.1));">
+          <div class="widget-title">📬 Tech Newsletter</div>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+            Get daily curated tech insights, cloud architectures, and developer updates directly to your inbox.
+          </p>
+          <input type="email" placeholder="Enter your email" style="width: 100%; padding: 0.6rem 0.8rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--bg-surface-elevated); color: var(--text-primary); margin-bottom: 0.75rem; outline: none;">
+          <button style="width: 100%; background: var(--primary); color: white; border: none; padding: 0.65rem; border-radius: var(--radius-sm); font-weight: 600; cursor: pointer; transition: var(--transition);">
+            Subscribe Free
+          </button>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- ============================================================== -->
+  <!-- 💰 MONETAG AD ZONE 4: STICKY BOTTOM BANNER BAR                 -->
+  <!-- ============================================================== -->
+  <div class="monetag-sticky-bottom" id="monetag-sticky-bar">
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <span style="font-size: 0.8rem; background: var(--primary); color: white; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: bold;">AD</span>
+      <span style="font-size: 0.85rem; color: var(--text-secondary);">
+        [Monetag Sticky Bottom Banner Zone] — Tap to test high CPM impression
+      </span>
+    </div>
+    <button class="monetag-sticky-close" onclick="closeStickyAd()" title="Close sticky ad">✕</button>
+  </div>
+
+  <!-- Full Article Modal Reader -->
+  <div class="modal-overlay" id="article-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close-btn" title="Close article">✕</button>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Rendered by main.js when an article is clicked -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Monetag Setup Guide Modal -->
+  <div class="modal-overlay" id="ad-modal">
+    <div class="modal-content" style="max-width: 650px;">
+      <button class="modal-close" id="ad-modal-close">✕</button>
+      <div class="modal-body">
+        <h2 style="color: var(--primary); margin-bottom: 0.75rem; font-size: 1.6rem;">
+          💰 Monetag Ads Setup Guide
+        </h2>
+        <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+          Apni website ko Monetag se link karne ke liye yeh 3 aasan steps follow karein:
+        </p>
+
+        <div style="background: var(--bg-surface-elevated); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">1️⃣ Domain Verification:</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+            Monetag dashboard par apni website add karein. Wahan se ek <code>&lt;meta name="monetag" content="..."&gt;</code> tag milega. Usko <code>index.html</code> ke <code>&lt;head&gt;</code> mein paste karein.
+          </p>
+        </div>
+
+        <div style="background: var(--bg-surface-elevated); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">2️⃣ MultiTag Script:</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+            Monetag ka <strong>MultiTag</strong> format sabse best hai (yeh In-Page Push, Vignette Banner aur Interstitial auto-manage karta hai). Iska script tag <code>&lt;head&gt;</code> ke andar paste karein.
+          </p>
+        </div>
+
+        <div style="background: var(--bg-surface-elevated); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1rem;">
+          <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">3️⃣ Specific Banner Zones:</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">
+            Hamne code mein pehle se 4 jagahon par Monetag slots bana diye hain:
+            <ul style="margin-top: 0.5rem; padding-left: 1.2rem; font-size: 0.85rem; color: var(--text-muted);">
+              <li><code>#monetag-top-banner</code> (Top Header Banner)</li>
+              <li><code>#monetag-in-feed-banner</code> (Articles ke darmiyan)</li>
+              <li><code>#monetag-sidebar-slot</code> (Sidebar 300x250)</li>
+              <li><code>#monetag-sticky-bar</code> (Sticky Bottom Banner)</li>
+            </ul>
+          </p>
+        </div>
+
+        <button onclick="document.getElementById('ad-modal').classList.remove('open')" style="width: 100%; background: var(--primary); color: white; border: none; padding: 0.75rem; border-radius: var(--radius-sm); font-weight: bold; cursor: pointer; margin-top: 0.5rem;">
+          Got it! / Samjh Aa Gaya
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" id="about-section">
+    <div class="container footer-content">
+      <div>
+        <div style="font-weight: 800; font-size: 1.2rem; color: var(--text-primary); margin-bottom: 0.3rem;">TechPulse</div>
+        <p>© 2026 TechPulse Media. All rights reserved. Optimized for high-speed delivery.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Advertise with Us</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Logic -->
+  <script src="js/main.js"></script>
+</body>
+</html>
